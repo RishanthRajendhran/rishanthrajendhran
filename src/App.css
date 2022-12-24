@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Hanken+Grotesk:ital,wght@0,200;0,300;0,400;1,100&display=swap');
+
+#root {
+  text-align: center;
+  background-color: black;
+}
+
+#welcomeDiv {
+  min-width: 90%;
+  min-height: 100vh;
+  padding: 0 5% 0 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+#greetingDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: orange;
+  font-size: 6em;
+  font-weight: 800;
+  text-align: end;
+  padding-right: 2.5%;
+  min-width: 50%;
+  min-height: 100vh;
+  align-items: flex-end;
+  justify-content: center;
+  animation: moveInLeft 3s ease-out;
+}
+
+#greetingDiv>div:nth-of-type(even) {
+  font-size: 0.8em;
+}
+
+#welcomeDivInner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.75em;
+  text-align: start;
+  min-width: 50%;
+  padding-left: 2.5%;
+  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  animation: moveInRight 3s ease-out;
+}
+
+#welcomeMessDiv>div:nth-of-type(even) {
+  font-size: 0.75em;
+}
+
+#authorDiv {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25em;
+  font-weight: 800;
+  /* color: rgb(128, 206, 240); */
+  color: orange;
+}
+
+.enterButton {
+  color: white;
+  text-shadow: 1px 1px 20px orange;
+  font-size: 0.25em;
+}
+
+.enterButton:hover {
+  color: orange;
+  text-shadow: none;
+}
+
+/* ---------- */
+#mainPage {
+  display: none;
+  min-width: 100wh;
+  min-height: 100vh;
+  background-color: black;
+}
+
+#sideCard {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5%;
+  color: white;
+  padding-left: 2%;
+  text-align: left;
+  border-right: 1px solid orange;
+  border-radius: 5%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+#sideCardImg > img {
+  max-width: 85%;
+  border-radius: 10% 10% 10% 0;
+}
+
+#sideCardAuthor {
+  color: orange;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+
+#sideCardLocation {
+  margin-top: 5%;
+  font-weight: 700;
+}
+
+#sideCardLocation img {
+  max-width: 8%;
+  margin-right: 2%;
+}
+
+#sideCardSocials {
+  margin-top: 5%;
+  font-weight: 500;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#sideCardSocials > div {
+  min-width: 33%;
+  max-width: 33%;
+  /* margin: 2.5% 0; */
+}
+
+#sideCardSocials img {
+  min-width: 33%;
+  max-width: 33%;
+}
+
+#mainCard {
+  display: flex;
+  flex-direction: column;
+  color: orange;
+  padding: 5%;
+}
+
+#mainCardCredo {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+}
+
+#mainCardCredo > div:nth-of-type(even) {
+  color: white;
+}
+
+#mainCardDesc {
+  padding: 5%;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'Cormorant', serif;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#mainCardGithub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  font-family: 'Cormorant', serif;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.mainCardGithubBox {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  min-width: 35%;
+  max-width: 35%;
+  padding: 5%;
+  border-bottom: 1px solid white;
+}
+
+.mainCardGithubBox > div {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.mainCardGithubBox > div:nth-of-type(even) {
+  font-size: 0.75em;
+}
+
+.mainCardGithubBox a, a:active {
+  color: orange;
+  text-decoration: none;
+}
+
+.mainCardGithubBox a:hover {
+  color: white;
+}
+
+#history {
+  display: flex;
+  flex-direction: row;
+  min-width: 80%;
+  max-width: 80%;
+}
+
+.timeline {
+  min-width: 60%;
+  max-width: 60%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.eduHistoryItem {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+  font-size: 0.75em;
+}
+
+.eduHistoryItem > div:first-of-type {
+  color: orange;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+@keyframes moveInLeft {
+  0% {
+      /* margin-right: 100%; */
+      transform: translateX(-100%);
+  }
+  80% {
+      transform: translateX(2.5%);
+  }
+  100% {
+      margin-right: 0%;
+      transform: translateX(0%);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+      transform: translateX(100%);
+  }
+  80% {
+      transform: translateX(-2.5%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIntoOblivion {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
