@@ -66,7 +66,7 @@
   color: orange;
 }
 
-.enterButton {
+/* .enterButton {
   color: white;
   text-shadow: 1px 1px 20px orange;
   font-size: 0.25em;
@@ -75,7 +75,7 @@
 .enterButton:hover {
   color: orange;
   text-shadow: none;
-}
+} */
 
 /* ---------- */
 #mainPage {
@@ -268,4 +268,109 @@
   100% {
     opacity: 0;
   }
+}
+
+@media (max-width: 1000px) {
+  #welcomeDiv {
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  #greetingDiv {
+    min-height: 0;
+    max-height: none;
+    /* margin: 0; */
+    font-size: 3em;
+    animation: moveInTop 3s ease-out;
+  }
+
+  /* #greetingDiv>div:nth-of-type(even) {
+    font-size: 0.8em;
+  } */
+  
+  #welcomeDivInner {
+    min-height: 0;
+    max-height: none;
+    margin: 5% 0 0 0;
+    font-size: 0.875em;
+    animation: moveInBottom 3s ease-out;
+  }
+  
+  /* #welcomeMessDiv>div:nth-of-type(even) {
+    font-size: 0.75em;
+  } */
+
+  #mainPage {
+    flex-direction: column;
+  }
+
+  #sideCard {
+    min-width: 95%;
+    border: none;
+    padding-bottom: 5%;
+    border-bottom: 1px solid orange;
+  }
+
+  #sideCardImg, 
+  #sideCardAuthor, 
+  #sideCardAuthorInTamil,
+  #sideCardLocation > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sideCardSocials > div > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sideCard > div {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  #sideCardImg > img {
+    max-width: 30%;
+  }
+
+  .mainCardGithubBox {
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  #history, .timeline {
+    min-width: 100%;
+    flex-direction: column;
+  }
+
+  @keyframes moveInTop {
+    0% {
+        /* margin-right: 100%; */
+        transform: translateY(-300%);
+    }
+    80% {
+        transform: translateY(5%);
+    }
+    100% {
+        margin-right: 0%;
+        transform: translateY(0%);
+    }
+  }
+
+  @keyframes moveInBottom {
+    0% {
+        transform: translateY(300%);
+    }
+    80% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+  }
+
 }

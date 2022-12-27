@@ -27,7 +27,7 @@ class SideCard extends Component {
             <div id="sideCardAuthor">
               {this.props.author}
             </div>
-            <div>
+            <div id="sideCardAuthorInTamil">
               {this.props.authorInTamil}
             </div>
           </div>
