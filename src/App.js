@@ -29,21 +29,21 @@ class App extends Component {
         },
       ],
       experience: [
-        // {
-        //   title: "Teaching Assistant",
-        //   desc: "Database Systems",
-        //   org: "University of Utah",
-        //   supervisor: "Prof. Daniel Kopta",
-        //   start: "Jan 23",
-        //   end: "May 23",
-        // },
         {
           title: "Researcher",
-          desc: "Evaluation of consistency of large-scale finetuned models",
+          desc: "Evaluating consistency of large-scale finetuned models",
           org: "University of Utah",
           supervisor: "Prof. Ana Marasovic",
           start: "Nov 22",
           end: "Present",
+        },
+        {
+          title: "Teaching Assistant",
+          desc: "Database Systems",
+          org: "University of Utah",
+          supervisor: "Prof. Daniel Kopta",
+          start: "Jan 23",
+          end: "May 23",
         },
         {
           title: "Teaching Assistant",
@@ -120,8 +120,13 @@ class App extends Component {
       ],
       githubRepos: [
         {
+          title: "Relation Extraction",
+          desc: "Relation extraction using distant supervision",
+          link: "https://github.com/RishanthRajendhran/relationExtraction",
+        },
+        {
           title: "FLANT5",
-          desc: "Evaluation of consistency of large-scale finetuned models",
+          desc: "Evaluation of consistency and self-consistency of large-scale finetuned models",
           link: "https://github.com/RishanthRajendhran/flant5",
         },
         {
