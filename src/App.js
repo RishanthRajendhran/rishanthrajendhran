@@ -30,11 +30,11 @@ class App extends Component {
       ],
       experience: [
         {
-          title: "Researcher",
-          desc: "Evaluating consistency of large-scale finetuned models",
-          org: "University of Utah",
+          title: "Research Assistant",
+          desc: "LLMs for clinical and biomedical domains",
+          org: "UtahNLP, University of Utah",
           supervisor: "Prof. Ana Marasovic",
-          start: "Nov 22",
+          start: "May 23",
           end: "Present",
         },
         {
@@ -43,6 +43,14 @@ class App extends Component {
           org: "University of Utah",
           supervisor: "Prof. Daniel Kopta",
           start: "Jan 23",
+          end: "May 23",
+        },
+        {
+          title: "Student Researcher",
+          desc: "Evaluating consistency of large-scale finetuned models",
+          org: "University of Utah",
+          supervisor: "Prof. Ana Marasovic",
+          start: "Nov 22",
           end: "May 23",
         },
         {
@@ -125,6 +133,11 @@ class App extends Component {
           link: "https://github.com/RishanthRajendhran/relationExtraction",
         },
         {
+          title: "visualQA",
+          desc: "Visual Question Answering",
+          link: "https://github.com/RishanthRajendhran/visualQA",
+        },
+        {
           title: "FLANT5",
           desc: "Evaluation of consistency and self-consistency of large-scale finetuned models",
           link: "https://github.com/RishanthRajendhran/flant5",
@@ -162,7 +175,7 @@ class App extends Component {
       ],
       credo: "Nothing worth having comes easy ",
       credoInTamil: " நல்லதே நடக்கட்டும்",
-      description: "I am a Computer Science graduate from IIT Madras, currently pursuing a master’s at The University of Utah. I am interested primarily in Natural Language Processing applications such as question answering and grammar correction and broadly interested in machine learning and deep learning. Over the years, I have coded in several programming languages such as C++, Python, Javascript and have used with several frameworks and tools such as React Native, Express, Numpy, Tensorflow and WandB, to name a few.",
+      description: "I am a Computer Science graduate from IIT Madras, currently pursuing a master’s at The University of Utah. I am interested primarily in Natural Language Processing applications such as question answering, event extraction and grammar correction and broadly interested in machine learning and deep learning. Over the years, I have coded in several programming languages such as C++, Python, Javascript and have used with several frameworks and tools such as PyTorch, Pandas, Numpy, Tensorflow, React Native, Express and WandB, to name a few.",
     }
   }
 
