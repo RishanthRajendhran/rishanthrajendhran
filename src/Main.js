@@ -26,6 +26,7 @@ class Main extends Component {
             experience={this.props.experience}
             eduHistory={this.props.eduHistory}
             githubRepos={this.props.githubRepos}
+            researchInterests={this.props.researchInterests}
           />
         </div>
       )

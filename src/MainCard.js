@@ -53,6 +53,17 @@ class MainCard extends Component {
         </div>
       ))
 
+      const researchInterests = this.props.researchInterests.map((item, index) => (
+        <div className="mainCardResearchInterestsBox" key={index}>
+            <div className="mainCardResearchInterestsBoxDiv">
+                {item.title}
+            </div>
+            <div className="mainCardResearchInterestsBoxDiv">
+                {item.desc}
+            </div>
+        </div>
+      ))
+
       return (
         <div id="mainCard">
           <div id="mainCardCredo">
@@ -65,6 +76,14 @@ class MainCard extends Component {
           </div>
           <div id="mainCardDesc">
             {this.props.description}
+          </div>
+          <div id="mainCardResearchInterests">
+            <div className="mainCardResearchInterestsBox">
+                <h4>
+                    Research Interests
+                </h4>
+            </div>
+            {researchInterests}
           </div>
           <div id="mainCardGithub">
             <div className="mainCardGithubBox">

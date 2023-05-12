@@ -170,6 +170,37 @@
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
+#mainCardResearchInterests {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  font-family: 'Cormorant', serif;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.mainCardResearchInterestsBox {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  min-width: 90%;
+  max-width: 90%;
+  padding: 5%;
+  border-bottom: 1px solid white;
+}
+
+.mainCardResearchInterestsBoxDiv {
+  font-size: 1.5em;
+  font-weight: 800;
+  padding-bottom: 3%;
+  color: orange;
+}
+
+.mainCardResearchInterestsBoxDiv:nth-of-type(even) {
+  font-size: 0.75em;
+  color: white;
+}
+
 #mainCardGithub {
   display: flex;
   flex-direction: row;
