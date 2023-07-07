@@ -201,6 +201,113 @@
   color: white;
 }
 
+#mainCardPaperTakeaways {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+  font-family: 'Cormorant', serif;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.mainCardPaperTakeawaysBox {
+  display: grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  padding: 5%;
+  border-bottom: 1px solid white;
+}
+
+.mainCardPaperTakeawaysBoxDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: orange;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 30vh;
+}
+
+.mainCardPaperTakeawaysBoxDivTopInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  font-size:0.5em;
+  min-width: 70%;
+  max-width: 70%;
+}
+
+.mainCardPaperTakeawaysBoxDivTopInnerNavBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  font-size:0.5em;
+  min-width: 15%;
+  max-width: 15%;
+}
+
+.mainCardPaperTakeawaysBoxDiv a, a:active {
+  color: orange;
+  text-decoration: none;
+}
+
+.mainCardPaperTakeawaysBoxDiv a:hover {
+  color: white;
+}
+
+.mainCardPaperTakeawaysBoxDivTitle {
+  font-size: 1.2em;
+  padding: 1%;
+}
+
+.mainCardPaperTakeawaysBoxDivAuthor {
+  font-size: 1em;
+  font-weight: 600;
+  padding-bottom: 3%;
+  color: white;
+  font-size: 1em;
+}
+
+#mainCardPaperTakeawaysBoxDivTopInnerNEXT:hover, #mainCardPaperTakeawaysBoxDivTopInnerPREV:hover {
+  color: white;
+}
+
+.mainCardPaperTakeawaysBoxDiv:nth-of-type(even) {
+  font-size: 0.75em;
+  color: white;
+  padding-bottom: 3%;
+}
+
+.mainCardPaperTakeawaysBoxDivInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  min-width: 40%;
+  max-width: 40%;
+  padding: 1% 5%;
+  font-size: 1em;
+}
+
+.mainCardPaperTakeawaysBoxDivInnerDiv {
+  color: white;
+}
+
+.mainCardPaperTakeawaysBoxDivInnerDiv:nth-of-type(odd) {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: orange;
+  padding-bottom: 1%;
+}
+
 #mainCardGithub {
   display: flex;
   flex-direction: row;
@@ -376,6 +483,37 @@
   #history, .timeline {
     min-width: 100%;
     flex-direction: column;
+  }
+
+  .mainCardPaperTakeawaysBoxDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: orange;
+  }
+
+  .mainCardPaperTakeawaysBoxDivInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1% 5%;
+    font-size: 1em;
+  }
+
+  #mainCardPaperTakeawaysBoxDivTopInnerNEXT {
+    padding-bottom: 5%;
+  }
+
+  .mainCardPaperTakeawaysBoxDiv {
+    justify-content: space-evenly;
   }
 
   @keyframes moveInTop {
